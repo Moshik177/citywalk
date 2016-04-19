@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="search_routes_array">
+        <item>Route1</item>
+        <item>Route2</item>
+        <item>Route3</item>
+        <item>Route4</item>
+        <item>Route5</item>
+    </string-array>
+</resources>

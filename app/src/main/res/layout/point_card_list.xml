@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.ctwalkapp.ctwalk.Fragments.RoutesFragment"
+    android:background="#efefef"
+    android:paddingTop="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:descendantFocusability="beforeDescendants">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingRight="50dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:background="@drawable/selector_card"
+        android:descendantFocusability="afterDescendants">
+
+        <ImageView
+            android:id="@+id/point_Img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/point_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:paddingLeft="10dp"
+            android:layout_alignTop="@+id/point_Img"
+            android:layout_toEndOf="@+id/point_Img"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/point_Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/point_Name"
+            android:layout_alignStart="@+id/point_Name" />
+
+        <com.ctwalkapp.ctwalk.Utils.PredicateLayout
+            android:id="@+id/predicate_layoutSubCategory_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/point_Description"
+            android:layout_below="@+id/point_Description"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentEnd="false" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.0"
+    defaultConfig {
+        applicationId "com.ctwalkapp.ctwalk"
+        minSdkVersion 17
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    signingConfigs {
+        release {
+            storeFile file('C:/Users/Smadar/keystores/android.jks')
+            storePassword 'MdLoAcYCTwalk0123'
+            keyAlias 'MyAndroidKey'
+            keyPassword 'MdLoAcYCTwalk0123'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    productFlavors {
+    }
+}
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.facebook.android:facebook-android-sdk:4.6.0'
+    compile 'com.google.android.gms:play-services:8.1.0'
+    compile 'com.squareup.picasso:picasso:2.3.2'
+    compile 'com.android.support:support-v4:22.2.1'
+}

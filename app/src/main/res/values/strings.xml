@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">citywalk</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="TextField">CTWalk</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_main_view">CTwalk</string>
+    <string name="facebook_app_id">1588802201380456</string>
+    <string name="action_MenuBar">ActionMenuBar</string>
+    <string name="action_share">ActionShare</string>
+    <string name="tabs_Routes">Routes</string>
+    <string name="tabs_Groups">Groups</string>
+    <string name="tabs_Photos">Photos</string>
+    <string name="tabs_Main">Main</string>
+    <string name="tabs_Videos">Videos</string>
+    <string name="title_activity_routes_fragment">RoutesFragment</string>
+    <string name="hello_routes_fragment">Hello routes fragment</string>
+    <string name="hello_group_fragment">Hello groups fragment</string>
+    <string name="hello_photos_fragment">Hello photos fragment</string>
+    <string name="hello_video_fragment">Hello video fragment</string>
+    <drawable name="text_tab_selected">#2FB8AC</drawable>
+    <drawable name="text_tab_unselected">#ffffff</drawable>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">hello_video_fragment</string>
+    <string name="title_activity_landing_page">CTwalk</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_after_login_activty">AfterLoginActivty</string>
+    <string name="title_activity_login_through_app_activty">LoginThroughAppActivty</string>
+    <string name="title_activity_address_activity">AddressActivity</string>
+    <string name="service_not_available">service not available</string>
+    <string name="invalid_lat_long_used">invalid lat long used</string>
+    <string name="no_address_found">no address found</string>address_found
+    <string name="address_found">address found</string>no_geocoder_available
+    <string name="no_geocoder_available">no geocoder available</string>
+    <string name="logo">CTwalk logo</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="action_foodAndDrink">action_foodAndDrink</string>
+    <string name="action_shopping">action_shopping</string>
+    <string name="action_familyFan">action_familyFan</string>
+    <string name="action_artw">action_artw</string>
+    <string name="action_historyw">action_historyw</string>
+    <string name="action_chillaxw">action_chillaxw</string>
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_activity_search_attribute">SearchAttributeActivity</string>
+    <string name="SelectAType">Select a type</string>
+    <string name="title_activity_login_throw_app_activty">LoginThroughAppActivty</string>
+    <string name="title_activity_base">BaseActivity</string>
+
+</resources>

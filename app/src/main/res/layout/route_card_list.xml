@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.ctwalkapp.ctwalk.Fragments.RoutesFragment"
+    android:background="#f4f4f4"
+    android:paddingTop="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:descendantFocusability="beforeDescendants">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:background="@drawable/selector_card"
+        android:descendantFocusability="afterDescendants">
+
+        <ImageView
+            android:id="@+id/Route_Img"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/demomap"
+            android:scaleType="fitXY"/>
+        <!--
+        <TextView
+            android:id="@+id/Route_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_centerInParent="true"
+            android:gravity="center" /> -->
+        <ImageView
+            android:id="@+id/tim_Img"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:src="@drawable/tim32"
+            android:layout_alignTop="@+id/ruler"
+            android:layout_toEndOf="@+id/Route_Km"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="-1dp" />
+
+        <ImageView
+            android:id="@+id/ruler"
+            android:layout_width="17dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ruler32"
+            android:layout_alignBottom="@+id/Route_Km"
+            android:layout_toEndOf="@+id/Route_City"
+            android:layout_marginLeft="3dp"
+            android:layout_marginBottom="1dp" />
+
+
+        <TextView
+            android:id="@+id/Route_Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="string/Test "
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/Route_Img"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/Route_City"
+            android:text="string/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Route_Description"
+            android:layout_alignStart="@+id/Route_Description" />
+
+
+        <TextView
+            android:id="@+id/Route_Km"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Route_Description"
+            android:layout_marginLeft="3dp"
+            android:layout_toEndOf="@id/ruler"
+            android:layout_marginTop="1dp" />
+
+
+        <TextView
+            android:id="@+id/Route_Time"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Route_Description"
+            android:layout_toEndOf="@id/tim_Img"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="1dp" />
+
+
+
+        <com.ctwalkapp.ctwalk.Utils.PredicateLayout
+            android:id="@+id/predicate_layoutSubCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/Route_City"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1.8dp" />
+
+
+        <!--
+        <TextView
+            android:id="@+id/Route_Tags"
+            android:text="string/test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/Route_Img"
+            android:layout_marginEnd="29dp" /> -->
+    </RelativeLayout>
+</FrameLayout>

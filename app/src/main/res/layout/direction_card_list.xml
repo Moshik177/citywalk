@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="5dp"
+    android:paddingLeft="5dp"
+    android:background="@drawable/selector_direction_card"
+    android:descendantFocusability="afterDescendants">
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:id="@+id/relative_img">
+        <ImageView
+            android:id="@+id/direc_Img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative2"
+        android:paddingLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/relative_img">
+
+        <TextView
+            android:id="@+id/direc_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Go Right in 200 m"
+            android:textSize="15sp"
+            android:textColor="#fe000000"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <com.ctwalkapp.ctwalk.Utils.PredicateLayout
+            android:id="@+id/predicate_layoutSubCategory_direction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/direc_Text"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_pointname"
+            android:text="Name"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/direc_km"
+        android:text="meters"
+        android:layout_toEndOf="@+id/relative2"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/direc_time"
+        android:text="time"
+        android:layout_below="@+id/direc_km"
+        android:layout_toEndOf="@+id/relative2"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

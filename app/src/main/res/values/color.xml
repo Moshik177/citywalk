@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="toolbarColor">#2FB8AC</color>
+    <color name="text_tab_selected">#2FB8AC</color>
+    <color name="text_tab_unselected">#ffffff</color>
+    <color name="ActionBarColor">#565058</color>
+    <color name="ActionBarTabBacgroundColor">#f4f4f4</color>
+    <color name= "cardColor">#ffffff</color>
+    <color name= "ShadowCardColor">#e1e1e1</color>
+    <color name= "GroupNameColor">#000000</color>
+    <color name= "DecriptionGroupColor">#656565</color>
+    <color name= "backgroundPage">#f4f4f4</color>
+    <color name= "colorNumber">#ffffff</color>
+    <color name= "StartingPointColor">#000000</color>
+    <color name= "textBhindPhotoColor">#f8f8f8</color>
+    <color name= "circleColor">#ffffff</color>
+    <color name= "IhaveAddressColor">#ffffff</color>
+    <color name="ButtonSearchAfterPress">#2FB8AC</color>
+    <color name= "ButtonSearchBeforePress">#656565</color>
+    <color name= "AddPointTextView">#000000</color>
+    <color name= "CancelPointTextView">#000000</color>
+    <color name= "backgroundPredicateLayout">#ffffff</color>
+    <color name= "loginTextViewTitle">#000000</color>
+    <color name="loginButtonThroughColor">#656565</color>
+    <color name="loginButtonThroughColorText">#ffffff</color>
+    <color name= "AfterLoginTittleColor">#000000</color>
+    <color name= "AfterLoginExplanationColor">#656565</color>
+    <color name= "BackgroundNavColor">#f4f4f4</color>
+</resources>
+

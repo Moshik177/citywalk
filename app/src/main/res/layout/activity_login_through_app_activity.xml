@@ -1,0 +1,180 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:paddingBottom="@dimen/activity_vertical_margin"
+tools:context="com.ctwalkapp.ctwalk.Activities.LoginThroughAppActivty"
+android:id="@+id/RelativeLayout">
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Welcome to citywalk!"
+    android:id="@+id/textViewTittle"
+    android:textColor="@color/AfterLoginTittleColor"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:textSize="32dp"
+    android:layout_marginTop="10dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="we would like to know you a bit better so we will get you to the places you'll love"
+        android:id="@+id/textViewExplanation"
+        android:textColor="@color/AfterLoginExplanationColor"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textSize="15dp"
+        android:layout_marginTop="60dp"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1.5"/>
+
+    <EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="text"
+
+        android:background="@drawable/edittext_style"
+    android:ems="20"
+    android:hint="First name"
+    android:id="@+id/FirstNameText"
+    android:layout_marginTop="110dp"
+        android:padding="5dp" />
+
+    <EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/LastNameText"
+    android:background="@drawable/edittext_style"
+    android:ems="20"
+    android:hint="Last name"
+    android:layout_below="@+id/FirstNameText"
+    android:layout_alignStart="@+id/FirstNameText"
+    android:layout_marginTop="10dp"
+    android:inputType="text"
+        android:padding="5dp" />
+
+    <EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textEmailAddress"
+    android:id="@+id/EmailText"
+    android:background="@drawable/edittext_style"
+    android:ems="20"
+    android:hint="E-mail"
+    android:layout_below="@+id/LastNameText"
+    android:layout_alignStart="@+id/LastNameText"
+    android:layout_marginTop="10dp"
+        android:padding="5dp" />
+
+
+    <EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textPassword"
+    android:id="@+id/passwordText"
+    android:background="@drawable/edittext_style"
+    android:ems="20"
+    android:hint="Password"
+    android:layout_below="@+id/EmailText"
+    android:layout_alignStart="@+id/EmailText"
+    android:layout_marginTop="10dp"
+    android:password="true"
+        android:padding="5dp" />
+
+
+    <EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/HomeTownText"
+    android:layout_below="@+id/passwordText"
+    android:layout_alignStart="@+id/passwordText"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/edittext_style"
+    android:ems="20"
+    android:hint="City"
+    android:inputType="text"
+        android:padding="5dp" />
+
+    <EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="text"
+    android:id="@+id/countryText"
+    android:background="@drawable/edittext_style"
+    android:ems="20"
+    android:hint="Country"
+    android:layout_below="@+id/HomeTownText"
+    android:layout_alignStart="@+id/HomeTownText"
+    android:layout_marginTop="10dp"
+        android:padding="5dp" />
+
+    <EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="number"
+    android:background="@drawable/edittext_style"
+    android:ems="20"
+    android:hint="Age"
+    android:id="@+id/AgeTextView"
+    android:layout_below="@+id/countryText"
+    android:layout_alignStart="@+id/countryText"
+    android:layout_marginTop="10dp"
+        android:padding="5dp" />
+
+
+    <Spinner
+    android:id="@+id/spinner_Gender"
+    android:background ="@drawable/border_spinner"
+   android:layout_width="350dp"
+   android:layout_height="40dp"
+   android:layout_below="@+id/AgeTextView"
+   android:layout_centerHorizontal="true"
+   android:layout_marginTop="10dp"
+   android:layout_marginBottom="10dp"
+        />
+
+
+<Button
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:text="OK, let&apos;s go"
+    android:id="@+id/MoveToSearchButton"
+    android:textStyle="bold"
+    android:layout_below="@+id/spinner_Gender"
+    android:textColor="@color/loginButtonThroughColorText"
+    android:background="@color/loginButtonThroughColor"
+    android:textAllCaps="false"
+    android:layout_alignStart="@+id/spinner_Gender" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:id="@+id/textViewSkip"
+        android:clickable="true"
+        android:onClick="MoveToMainWithOutLogin"
+        android:textColor="@color/AfterLoginTittleColor"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="150dp" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Error"
+    android:id="@+id/ErrorTextView"
+    android:layout_below="@+id/MoveToSearchButton"
+    android:layout_alignStart="@+id/spinner_Gender"
+    android:textStyle="bold"
+    android:textColor="#ff3131"
+    android:visibility="invisible"
+    android:layout_alignEnd="@+id/MoveToSearchButton" />
+
+
+</RelativeLayout>

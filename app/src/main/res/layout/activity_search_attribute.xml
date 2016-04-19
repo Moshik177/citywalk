@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DartboardActivity"
+    android:background="@color/backgroundPage"
+    android:weightSum="1">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/backgroundPage"
+    tools:context="com.ctwalkapp.ctwalk.Activities.SearchAttributeActivity">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:id="@+id/action_chilling"
+        android:src="@mipmap/chillaxb"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:id="@+id/action_history"
+        android:src="@mipmap/historyb"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:id="@+id/action_familyFan"
+        android:src="@mipmap/familyb"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:id="@+id/action_foodAndDrink"
+        android:src="@mipmap/foodb"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:id="@+id/action_art"
+        android:src="@mipmap/artb"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:id="@+id/action_shopping"
+        android:src="@mipmap/shoppingb"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>
+
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.ctwalkapp.ctwalk.Fragments.RoutesFragment"
+        android:background="@color/backgroundPage"
+        android:id ="@+id/FrameLayout"
+        android:paddingTop="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:descendantFocusability="beforeDescendants">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_card"
+        android:descendantFocusability="afterDescendants"
+        tools:context="com.ctwalkapp.ctwalk.Activities.SearchAttributeActivity"
+        android:textAlignment="center"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp">
+
+
+        <com.ctwalkapp.ctwalk.Utils.ScrollMyVew
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:measureAllChildren="true"
+            android:fillViewport="false"
+            >
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:context="com.ctwalkapp.ctwalk.Activities.SearchAttributeActivity"
+                android:textAlignment="center">
+
+            <Spinner
+        android:id="@+id/spinnerTypeAAttribute"
+        style="@style/spinner_style"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:prompt="@string/SelectAType"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="0dp" />
+
+
+    <com.ctwalkapp.ctwalk.Utils.PredicateLayout
+        android:id="@+id/predicate_layoutSubCategory"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp">
+
+    </com.ctwalkapp.ctwalk.Utils.PredicateLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Must Be"
+        android:id="@+id/MustBe"
+        android:textColor="@color/ButtonSearchBeforePress"
+        android:textSize="14dp"
+        android:textIsSelectable="false"
+        android:layout_marginLeft="10dp"
+        android:visibility="invisible"
+        android:layout_below="@+id/predicate_layoutSubCategory"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+
+    <com.ctwalkapp.ctwalk.Utils.PredicateLayout
+        android:id="@+id/predicate_layoutRestriction"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/MustBe">
+
+    </com.ctwalkapp.ctwalk.Utils.PredicateLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nice To Have"
+        android:id="@+id/NiceToHave"
+        android:textColor="@color/ButtonSearchBeforePress"
+        android:textSize="14dp"
+        android:textIsSelectable="false"
+        android:layout_marginLeft="10dp"
+        android:visibility="invisible"
+        android:layout_below="@+id/predicate_layoutRestriction"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+
+    <com.ctwalkapp.ctwalk.Utils.PredicateLayout
+        android:id="@+id/predicate_layoutFacility"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/NiceToHave">
+    </com.ctwalkapp.ctwalk.Utils.PredicateLayout>
+     </RelativeLayout>
+    </com.ctwalkapp.ctwalk.Utils.ScrollMyVew>
+    </RelativeLayout>
+    </FrameLayout>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.ctwalkapp.ctwalk.Activities.SearchAttributeActivity"
+        android:layout_above="@id/FrameLayout"
+        android:textAlignment="center"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp">
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:background="@drawable/circle"
+        android:id="@+id/approvepoint"
+        android:src="@mipmap/approvepoint"
+        android:layout_marginLeft="90dp"
+        android:clickable="true"
+        android:onClick="AddPointMethod"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/AddTextView"
+        android:textColor="@color/AddPointTextView"
+        android:textSize="10dp"
+        android:textIsSelectable="false"
+        android:layout_marginLeft="100dp"
+        android:visibility="invisible"
+        android:layout_marginTop="35dp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:id="@+id/cancelPoint"
+        android:background="@drawable/circle"
+        android:src="@mipmap/cancel"
+        android:layout_marginLeft="200dp"
+        android:clickable="true"
+        android:onClick= "cancelMethod"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/CancelTextView"
+        android:textColor="@color/CancelPointTextView"
+        android:textSize="10dp"
+        android:textIsSelectable="false"
+        android:layout_marginLeft="205dp"
+        android:visibility="invisible"
+        android:layout_marginTop="35dp" />
+
+</RelativeLayout>
+</LinearLayout>

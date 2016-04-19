@@ -1,0 +1,170 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DartboardActivity"
+    android:weightSum="1">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:id= "@+id/RelativeLayout"
+        tools:context="com.ctwalkapp.ctwalk.Activities.SearchActivity"
+        android:background="@color/backgroundPage"
+        android:clickable="true"
+        android:layout_weight="1.20">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:id="@+id/routecreatorpin"
+            android:src="@mipmap/routecreatorpin"
+            android:paddingRight="20dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Starting Point"
+            android:id="@+id/Category"
+            android:textSize="23dp"
+            android:layout_below="@+id/numberOfPoint"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/StartingPointColor"
+            android:layout_marginLeft="20dp" />
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/addAPointPic"
+            android:src="@mipmap/addapoint"
+            android:layout_below="@+id/routecreatorpin"
+            android:layout_marginTop="70dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/circle"
+            android:clickable="true"
+            android:onClick="OpenLinearLayout"
+            android:scaleType="center"
+            android:layout_marginLeft="135dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add a point"
+            android:id="@+id/addAPointSecond"
+            android:layout_marginTop="355dp"
+            android:textSize="14dp"
+            android:textIsSelectable="false"
+            android:layout_marginLeft="75dp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/addAPointPicSecond"
+            android:src="@mipmap/addapoint"
+            android:layout_marginLeft="90dp"
+            android:background="@drawable/circle"
+            android:clickable="true"
+            android:onClick="OpenLinearLayout"
+            android:layout_below="@+id/routecreatorpin"
+            android:layout_marginTop="70dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add a point"
+            android:id="@+id/addAPoint"
+            android:layout_marginTop="355dp"
+            android:textSize="14dp"
+            android:textIsSelectable="false"
+            android:layout_marginLeft="128dp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/searchroutePic"
+            android:src="@mipmap/searchroute"
+            android:layout_marginLeft="190dp"
+            android:background="@drawable/circle"
+            android:clickable="true"
+            android:onClick="OpenSearch"
+            android:layout_below="@+id/routecreatorpin"
+            android:layout_marginTop="70dp"
+            android:visibility="invisible" />
+
+        <ProgressBar android:id="@+id/login_progress" style="?android:attr/progressBarStyleLarge"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:minHeight="50dp"
+            android:minWidth="200dp"
+            android:progress="1"
+            android:layout_alignBottom="@+id/searchroutePic"
+            android:layout_alignParentEnd="false"
+            android:layout_toEndOf="@id/searchroutePic"
+            android:layout_marginLeft="10dp"
+            android:visibility="invisible"
+            android:layout_marginBottom="15dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:id="@+id/Search"
+            android:layout_marginTop="355dp"
+            android:textSize="14dp"
+            android:textIsSelectable="false"
+            android:layout_marginLeft="195dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_alignTop="@+id/routecreatorpin"
+            android:layout_alignStart="@+id/routecreatorpin"
+            android:id="@+id/numberOfPoint"
+            android:textColor="@color/colorNumber"
+            android:textSize="75dp"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="17dp"
+            android:focusableInTouchMode="false" />
+
+    </RelativeLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="@color/backgroundPage"
+        android:id = "@+id/LinearLayout"
+        tools:context=".DartboardActivity"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <GridView
+            android:numColumns="auto_fit"
+            android:gravity="center"
+            android:columnWidth="100dp"
+            android:stretchMode="columnWidth"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:id="@+id/grid"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

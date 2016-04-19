@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.ctwalkapp.ctwalk.Activities.LoginActivity"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin">
+
+    <ProgressBar android:id="@+id/login_progress" style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp" android:visibility="gone" />
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LoginGooglebutton"
+        android:layout_below="@+id/view"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="42dp"
+        android:layout_alignEnd="@+id/view"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp" />
+
+    <com.facebook.login.widget.LoginButton
+        xmlns:fb="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/loginButtonThroughColorText"
+        android:id="@+id/LoginFacebookbutton"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_below="@+id/LoginGooglebutton"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:paddingTop="11dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="11dp"
+        android:layout_alignEnd="@+id/LoginGooglebutton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hey there!"
+        android:id="@+id/textView2"
+        android:layout_marginTop="28dp"
+        android:textSize="18dp"
+        android:textColor="@color/loginTextViewTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's walk!"
+        android:id="@+id/buttonLoginApp"
+        android:textColor="@color/loginButtonThroughColorText"
+        android:background="@color/loginButtonThroughColor"
+        android:textAllCaps="false"
+        android:layout_below="@+id/Password"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:textSize="14sp"
+        android:layout_alignEnd="@+id/view" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#DDDDDD"
+        android:layout_marginTop="22dp"
+        android:id="@+id/view"
+        android:layout_below="@+id/ErrorTextView"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edittext_style"
+        android:hint="Email"
+        android:fontFamily="sans-serif"
+        android:ems="20"
+        android:id="@+id/Email"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:layout_alignEnd="@+id/Password" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_style"
+        android:ems="20"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:id="@+id/Password"
+        android:fontFamily="sans-serif"
+        android:layout_below="@+id/Email"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:layout_alignEnd="@+id/buttonLoginApp" />
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:text="Please enter your E-mail address"
+        android:id="@+id/ErrorTextView"
+        android:visibility="invisible"
+        android:layout_below="@+id/buttonLoginApp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

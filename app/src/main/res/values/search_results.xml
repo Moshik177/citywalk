@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="search_result_array">
+        <item>Israel</item>
+        <item>Tel-Aviv</item>
+        <item>Alaska</item>
+        <item>Jordan</item>
+        <item>Thailand</item>
+        <item>Netherlands</item>
+        <item>Greece</item>
+        <item>Jerusalem</item>
+        <item>Rio de Jeniero</item>
+    </string-array>
+</resources>

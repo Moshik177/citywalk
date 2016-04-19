@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ctwalkapp.ctwalk.Fragments.NavRouteInfoTab">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:id="@+id/relative1">
+
+        <com.ctwalkapp.ctwalk.Utils.AutoResizeTextView
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:id="@+id/textView_Route_From"
+            android:text="From"
+            android:textSize="60sp"
+            android:padding="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp" />
+
+        <com.ctwalkapp.ctwalk.Utils.AutoResizeTextView
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:id="@+id/textView_Route_To"
+            android:text="To"
+            android:padding="5dp"
+            android:textSize="60sp"
+            android:layout_marginTop="-12dp"
+            android:layout_below="@+id/textView_Route_From"
+            android:layout_alignStart="@+id/textView_Route_From"/>
+
+        <TextView
+            android:id="@+id/Route_City"
+            android:text="string/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_Route_To"
+            android:layout_alignStart="@+id/textView_Route_To"
+            android:layout_marginLeft="5dp" />
+
+
+        <TextView
+            android:id="@+id/Route_Km"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_Route_To"
+            android:layout_marginLeft="22dp"
+            android:layout_toEndOf="@id/Route_City" />
+
+
+        <TextView
+            android:id="@+id/Route_Time"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_alignTop="@+id/rulerR"
+            android:layout_toEndOf="@+id/tim_Img"
+            android:layout_marginTop="-3dp" />
+
+        <ImageView
+            android:id="@+id/tim_Img"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:src="@drawable/tim32"
+            android:layout_marginLeft="7dp"
+            android:layout_alignBottom="@+id/Route_City"
+            android:layout_toEndOf="@+id/Route_Km" />
+
+        <ImageView
+            android:id="@+id/rulerR"
+            android:layout_width="17dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ruler32"
+            android:layout_marginLeft="3dp"
+            android:layout_alignBottom="@+id/Route_City"
+            android:layout_toEndOf="@+id/Route_City"
+            android:layout_marginBottom="1dp" />
+
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:id="@+id/list_item_points"
+        android:divider="@null"
+        android:background="#efefef"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/relative1"
+        android:paddingBottom="10dp">
+
+    </ListView>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.ctwalkapp.ctwalk.Fragments.NavRouteInfoTab"
+        android:background="#efefef"
+        android:id="@+id/relativeLayout"
+        android:layout_below="@+id/relative1"
+        android:layout_marginTop="280dp">
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:background="@drawable/circle"
+            android:id="@+id/approvepoint"
+            android:src="@mipmap/approvepoint"
+            android:layout_marginLeft="90dp"
+            android:clickable="true"
+            android:onClick="AddPointMethod"
+            android:visibility="invisible"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:id="@+id/AddTextView"
+            android:textColor="@color/AddPointTextView"
+            android:textSize="10dp"
+            android:textIsSelectable="false"
+            android:layout_marginLeft="100dp"
+            android:visibility="invisible"
+            android:layout_marginTop="45dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:id="@+id/cancelPoint"
+            android:background="@drawable/circle"
+            android:src="@mipmap/cancel"
+            android:layout_marginLeft="200dp"
+            android:clickable="true"
+            android:onClick= "cancelMethod"
+            android:visibility="invisible"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/CancelTextView"
+            android:textColor="@color/CancelPointTextView"
+            android:textSize="10dp"
+            android:textIsSelectable="false"
+            android:layout_marginLeft="205dp"
+            android:visibility="invisible"
+            android:layout_marginTop="45dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

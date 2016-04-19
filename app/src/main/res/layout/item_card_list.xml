@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content" tools:context="com.ctwalkapp.ctwalk.Fragments.GroupsFragment"
+    android:background="#f4f4f4" android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:descendantFocusability="beforeDescendants">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="229dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/selector_card"
+        android:descendantFocusability="afterDescendants"
+        android:layout_gravity="left|center_vertical">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:id="@+id/Group_image"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/Group_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Description"
+            android:textStyle="bold"
+            android:textColor="@color/GroupNameColor"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/DecriptionGroupColor"
+            android:textSize="14sp"
+            android:layout_marginBottom="10dp" />
+
+               <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/dotImage"
+            android:src="@mipmap/anywhere" />
+
+    </RelativeLayout>
+</FrameLayout>

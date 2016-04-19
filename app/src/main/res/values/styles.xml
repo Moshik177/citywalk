@@ -1,0 +1,19 @@
+<resources>
+<style name="AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+    <item name="android:actionBarStyle">@style/AppTheme.ActionBar</item>
+    <item name="actionBarStyle">@style/AppTheme.ActionBar</item>
+    <item name="android:windowActionBar">true</item>
+    <item name="android:popupMenuStyle">@style/AppTheme.PopUpMenu</item>
+</style>
+<style name="AppTheme.ActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+    <item name="android:background">@drawable/background</item>
+    <item name="background">@drawable/background</item>
+</style>
+<style name="AppTheme.PopUpMenu" parent="android:Widget.Holo.Light.ListPopupWindow">
+    <item name="android:popupBackground">@drawable/background</item>
+</style>
+
+    <style name="CustomTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

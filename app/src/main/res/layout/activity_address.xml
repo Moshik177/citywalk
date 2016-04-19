@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.ctwalkapp.ctwalk.Activities.AddressActivity"
+    android:background="@color/backgroundPage">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Where should we start?"
+        android:id="@+id/textView8"
+        android:textSize="25sp"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#f71e1e" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="My current location"
+        android:id="@+id/myAddress"
+        android:textSize="18dp"
+        android:clickable="true"
+        android:onClick="MyCurrentLocationFunc"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_above="@+id/iHaveAnAddressImageView"
+        android:layout_alignStart="@+id/newAddress" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I have an address"
+        android:id="@+id/newAddress"
+        android:clickable="true"
+        android:onClick="IHaveAnAddressFunc"
+        android:textSize="18dp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/AnyAddress" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:text="Anywhere the streets will take us"
+        android:id="@+id/AnyAddress"
+        android:clickable="true"
+        android:onClick="AnywhereTheStreetsWillTakeUsFunc"
+        android:textSize="18dp"
+        android:layout_alignBottom="@+id/AnyAddressImageView"
+        android:layout_toEndOf="@+id/AnyAddressImageView" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/MyPositionImageView"
+        android:src="@mipmap/myposition"
+        android:baselineAlignBottom="false"
+        android:paddingRight="20dp"
+        android:layout_above="@+id/iHaveAnAddressImageView"
+        android:layout_toStartOf="@+id/myAddress" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:id="@+id/iHaveAnAddressImageView"
+        android:src="@mipmap/address"
+        android:paddingRight="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+        android:id="@+id/AnyAddressImageView"
+        android:src="@mipmap/anywhere"
+        android:paddingRight="20dp"
+        android:layout_below="@+id/newAddress"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="190dp"
+        android:layout_height="25dp"
+        android:background ="@drawable/edittext_style"
+        android:ems="10"
+        android:id="@+id/havingAddress"
+        android:visibility="invisible"
+        android:layout_toEndOf="@id/iHaveAnAddressImageView"
+        android:layout_marginTop="250dp" />
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="21dp"
+        android:src= "@drawable/walking"
+        android:id="@+id/toSearch"
+        android:layout_toEndOf="@id/havingAddress"
+        android:layout_alignTop="@+id/havingAddress"
+
+        android:clickable="true"
+        android:layout_marginTop="2dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Error"
+        android:id="@+id/ErrorTextView"
+        android:textStyle="bold"
+        android:textColor="#ff3131"
+        android:layout_toEndOf="@id/toSearch"
+        android:textSize="8dp"
+        android:visibility="invisible"
+        android:layout_marginTop="260dp" />
+
+</RelativeLayout>
